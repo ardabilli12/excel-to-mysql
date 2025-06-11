@@ -32,6 +32,7 @@ type Config struct {
 	SheetName      string          `json:"sheet_name"`
 	ColumnMappings []ColumnMapping `json:"column_mappings"`
 	StateUUID      string          `json:"state_uuid"`
+	DocName        string          `json:"doc_name"`
 }
 
 func main() {
@@ -58,7 +59,7 @@ func main() {
 	defer db.Close()
 
 	// Process Excel file
-	xlsx, err := excelize.OpenFile("data.xlsx")
+	xlsx, err := excelize.OpenFile(config.DocName)
 	if err != nil {
 		log.Fatal("Failed to open Excel file:", err)
 	}

@@ -9,6 +9,7 @@
     },
     "sheet_name": "Sheet1",
     "state_uuid": "01975d14-61a5-71a9-847b-9e345b265ea9",
+    "doc_name":"france.xlsx",
     "column_mappings": [
         {
             "excel_column": "city_name",
