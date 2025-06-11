@@ -1,0 +1,25 @@
+INSERT INTO master_states (uuid, country_uuid, name, created_at, updated_at)
+VALUES 
+( "01975da1-9e71-7ee8-b815-0ac72fd10973","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Aargau", NOW(), NOW()),
+( "01975da1-9e71-784f-a150-6807b9404f7a","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Appenzell Ausserrhoden", NOW(), NOW()),
+( "01975da1-9e71-7296-b8a4-411ddc8d8bcb","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Basel-Land", NOW(), NOW()),
+( "01975da1-9e71-70c6-bae5-c67aeb84d8fb","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Bern", NOW(), NOW()),
+( "01975da1-9e71-73fc-8e40-e45c96ab12da","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Fribourg", NOW(), NOW()),
+( "01975da1-9e71-7480-8901-7b8faf191534","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Geneva", NOW(), NOW()),
+( "01975da1-9e71-7503-b550-c5a70aa731ee","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Glarus", NOW(), NOW()),
+( "01975da1-9e71-7094-aad7-7007f6f6c342","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Graubünden", NOW(), NOW()),
+( "01975da1-9e71-7631-a0f1-31ce0a0db251","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Jura", NOW(), NOW()),
+( "01975da1-9e71-7fe8-8fe7-29ec622d39dd","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Lucerne", NOW(), NOW()),
+( "01975da1-9e71-7446-bc0c-607b03fab969","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Neuchâtel", NOW(), NOW()),
+( "01975da1-9e71-79b0-94e8-abe6e63f44de","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Schaffhausen", NOW(), NOW()),
+( "01975da1-9e71-7a04-bf9d-72d91bcced1f","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Schwyz", NOW(), NOW()),
+( "01975da1-9e71-7d08-8742-15687cec0664","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Solothurn", NOW(), NOW()),
+( "01975da1-9e71-727c-a1ee-bbe4c84945e9","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "St. Gallen", NOW(), NOW()),
+( "01975da1-9e71-7e39-8fe4-6a57727bbb68","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Thurgau", NOW(), NOW()),
+( "01975da1-9e71-7b45-b493-d1cc0e2d67f8","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Ticino", NOW(), NOW()),
+( "01975da1-9e71-7a50-ad9a-349f9c944fdb","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Uri", NOW(), NOW()),
+( "01975da1-9e71-7abc-b339-d7f6c08177f1","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Valais", NOW(), NOW()),
+( "01975da1-9e71-7bab-9fcf-5e4430fa0ffe","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Vaud", NOW(), NOW()),
+( "01975da1-9e71-704a-85cf-c967b774ded6","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Zug", NOW(), NOW()),
+( "01975da1-9e71-7d2c-b95d-d0336a31d25b","ba041c4a-e50a-49a5-b382-0ecb0241af3c", "Zürich", NOW(), NOW());
+ON DUPLICATE KEY UPDATE updated_at = NOW();

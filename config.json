@@ -1,0 +1,19 @@
+{
+    "database": {
+        "host": "10.20.0.3",
+        "port": 3306,
+        "user": "snap_core_processor",
+        "password": "PTGY3SZt!",
+        "db_name": "xb_core_processor",
+        "table": "master_cities"
+    },
+    "sheet_name": "Sheet1",
+    "state_uuid": "01975d14-61a5-71a9-847b-9e345b265ea9",
+    "doc_name":"france.xlsx",
+    "column_mappings": [
+        {
+            "excel_column": "city_name",
+            "db_column": "name"
+        }
+    ]
+}
